@@ -98,7 +98,7 @@ def front
 		puts 'Question 1 : La ou les crypto qui ont la plus grosse valeur'
 		puts 'Question 2 : La ou les crypto qui ont la plus petite valeur.'
 		puts 'Question 3 : Les devises dont le cours est inférieur à 6000.'
-		puts 'Question 4 : Les devises dont le cours est inférieur à 6000.'
+		puts 'Question 4 : Le(s) devises max dont le cours est inférieur à 6000.'
 		puts ""
 		mychoice = gets.chomp.to_i
 		while ( mychoice < 1 || mychoice > 4 )
