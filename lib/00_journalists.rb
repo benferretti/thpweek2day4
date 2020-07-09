@@ -62,7 +62,7 @@ def question4 (liste)
 
 	liste.each do |i|
 		chars = i.split('')  #découpe les tags en lettres
-		if (chars[0] == chars[0].upcase)
+		if (chars[0] =~ /[A-Z]/)
 			tableau_majuscule << i
 			count_majuscule += 1
 		end
