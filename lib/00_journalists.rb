@@ -103,6 +103,7 @@ end
 def question8 (liste) 
 		array = {}
 		count_char = 0
+		count_handle = 0
 		erreur = 0
 
 		liste.each do |i|
@@ -129,8 +130,10 @@ def question8 (liste)
 			if length == nbchars
 				puts "#{handle}"
 				erreur += 1
+				count_handle += 1
 			end
 		end
+		puts "Il y a #{count_handle} handles avec #{nbchars} caractères :"	
 		if (erreur == 0) 
 			puts "Il n'y a aucun handle pour ce nombre de caractères"
 		end
